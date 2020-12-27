@@ -20,11 +20,10 @@ int main()
         else 
         {
             n2++;
-            a[n2] = abs(tmp);
+            b[n2] = abs(tmp);
         }
     }
     sort(a + 1, a + 1 + n1);
-    sort(b + 1, b + 1 + n2);
     for (int i = 1; i <= n2; i++)
     {
         long long up = upper_bound(a + 1, a + 1 + n1, b[i] + k) - a;
